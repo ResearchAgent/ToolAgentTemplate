@@ -1,0 +1,25 @@
+[project]
+name = "llmdoc"
+version = "0.1.0"
+description = "A project demonstrating OpenAI function calling capabilities"
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=1.12.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.6.0",
+    "anthropic (>=0.49.0,<0.50.0)",
+    "google-genai (>=1.3.0,<2.0.0)",
+    "google-generativeai (>=0.8.4,<0.9.0)",
+]
+
+[tool.poetry]
+packages = [{include = "llmdoc", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
